@@ -9,7 +9,6 @@ import * as serviceWorker from './serviceWorker';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 
 const container = document.getElementById('root');
