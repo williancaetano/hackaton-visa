@@ -15,7 +15,6 @@
 .statusboxlarge-component {
   max-height: 300px;
   text-align: left;
-  justify-content: baseline;
   margin: 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -30,5 +29,5 @@
 
 .statusboxlarge-progressbar {
     border-radius: 50px;
-    margin-top: 10px;
+    margin: 10px;
 }

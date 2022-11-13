@@ -16,10 +16,16 @@
 }
 
 .app-header {
+  margin-top: 7vh;
+}
+
+.app-header-content {
     font-size: 40px;
+    text-align: bottom;
     color: white;
+    font-weight: bold;
 }
 
 .app-content {
-    margin-top: 13vh;
+    margin-top: 6vh;
 }
