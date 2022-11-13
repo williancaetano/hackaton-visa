@@ -3,7 +3,7 @@ import { Box, Grid, GridItem } from '@chakra-ui/react';
 import { Progress } from '@chakra-ui/react';
 import './statusboxlarge.css';
 
-const StatusBoxLarge = ({ type, status }) => {
+const StatusBoxLarge = ({ type, status, progress }) => {
   if (type === 'bag') {
     let title = 'STATUS BAGAGEM';
     let icon =
@@ -30,7 +30,7 @@ const StatusBoxLarge = ({ type, status }) => {
               </div>
             </GridItem>
             <GridItem colSpan={3}>
-              <Progress className="statusboxlarge-progressbar" value={80} />
+              <Progress className="statusboxlarge-progressbar" value={progress} />
             </GridItem>
           </Grid>
         </Box>
@@ -62,7 +62,7 @@ const StatusBoxLarge = ({ type, status }) => {
               <img height="80" width="80" src={icon} alt="icon"></img>
             </GridItem>
             <GridItem colSpan={3}>
-              <Progress className="statusboxlarge-progressbar" value={80} />
+              <Progress className="statusboxlarge-progressbar" value={progress} />
             </GridItem>
           </Grid>
         </Box>

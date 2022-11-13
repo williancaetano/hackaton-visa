@@ -1,17 +1,39 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './pages/App';
+import BagHistory from './pages/bagHistory';
+import FlightHistory from './pages/flightHistory'
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: '/BagHistory',
+    element: <BagHistory></BagHistory>,
+  },
+  {
+    path: '/FlightHistory',
+    element: <FlightHistory></FlightHistory>,
+  },
+]);
+
 root.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>
 );
 
