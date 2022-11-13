@@ -68,34 +68,6 @@ const StatusBoxLarge = ({ type, status }) => {
         </Box>
       </>
     );
-    return (
-      <>
-        <Box
-          className="statusboxlarge-component"
-          p="10px"
-          color="white"
-          borderRadius="15px"
-          bg="white"
-        >
-          <Grid templateColumns="repeat(3, 1fr)">
-            <GridItem colSpan={1}>
-              <img height="80" width="80" src={icon}></img>
-            </GridItem>
-            <GridItem colSpan={2}>
-              <div className="statusboxlarge-align">
-                <div className="statusboxlarge-content">
-                  <p className="statusboxlarge-title">{title}</p>
-                  <p className="statusboxlarge-status">{status}</p>
-                </div>
-              </div>
-            </GridItem>
-            <GridItem colSpan={3}>
-              <Progress className="statusboxlarge-progressbar" value={80} />
-            </GridItem>
-          </Grid>
-        </Box>
-      </>
-    );
   }
 };
 

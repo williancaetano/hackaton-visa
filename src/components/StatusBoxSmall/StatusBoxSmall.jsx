@@ -1,13 +1,7 @@
 import React from 'react';
 import {
-  ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
   Grid,
-  theme,
   GridItem,
 } from '@chakra-ui/react';
 import { Progress } from '@chakra-ui/react';
@@ -29,7 +23,7 @@ const StatusBoxSmall = ({ type, status }) => {
         >
           <Grid templateColumns="repeat(3, 1fr)">
             <GridItem colSpan={1}>
-              <img height="50" width="50" src={icon}></img>
+              <img height="50" width="50" src={icon} alt="icon"></img>
             </GridItem>
             <GridItem colSpan={2}>
               <div className="statusboxsmall-align">
@@ -69,7 +63,7 @@ const StatusBoxSmall = ({ type, status }) => {
               </div>
             </GridItem>
             <GridItem colSpan={1}>
-              <img className="statuxboxsmall-icon" height="50" width="50" src={icon}></img>
+              <img className="statuxboxsmall-icon" height="50" width="50" src={icon} alt="icon"></img>
             </GridItem>
             <GridItem colSpan={3}></GridItem>
           </Grid>
