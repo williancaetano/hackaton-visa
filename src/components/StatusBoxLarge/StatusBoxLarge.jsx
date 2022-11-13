@@ -1,20 +1,10 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-  GridItem,
-} from '@chakra-ui/react';
+import { Box, Grid, GridItem } from '@chakra-ui/react';
 import { Progress } from '@chakra-ui/react';
 import './statusboxlarge.css';
 
 const StatusBoxLarge = ({ type, status }) => {
-  if (type == 'bag') {
+  if (type === 'bag') {
     let title = 'STATUS BAGAGEM';
     let icon =
       'https://uploaddeimagens.com.br/images/004/161/697/full/Bag.png?1668332213';
@@ -29,7 +19,7 @@ const StatusBoxLarge = ({ type, status }) => {
         >
           <Grid templateColumns="repeat(3, 1fr)">
             <GridItem colSpan={1}>
-              <img height="80" width="80" src={icon}></img>
+              <img height="80" width="80" src={icon} alt="icon"></img>
             </GridItem>
             <GridItem colSpan={2}>
               <div className="statusboxlarge-align">
@@ -69,7 +59,7 @@ const StatusBoxLarge = ({ type, status }) => {
               </div>
             </GridItem>
             <GridItem colSpan={1}>
-              <img height="80" width="80" src={icon}></img>
+              <img height="80" width="80" src={icon} alt="icon"></img>
             </GridItem>
             <GridItem colSpan={3}>
               <Progress className="statusboxlarge-progressbar" value={80} />
