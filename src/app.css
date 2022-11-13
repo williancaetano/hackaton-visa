@@ -1,0 +1,25 @@
+.app {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #0D1F5C,
+    #0B8CA8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #0D1F5C,
+    #0B8CA8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-color: ; */
+  height: 35vh;
+}
+
+.app-header {
+    font-size: 40px;
+    color: white;
+}
+
+.app-content {
+    margin-top: 13vh;
+}
