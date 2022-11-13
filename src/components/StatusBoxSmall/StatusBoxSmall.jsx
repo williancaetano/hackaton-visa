@@ -8,7 +8,7 @@ import { Progress } from '@chakra-ui/react';
 import './statusboxsmall.css';
 
 const StatusBoxSmall = ({ type, status }) => {
-  if (type == 'bag') {
+  if (type === 'bag') {
     let title = 'STATUS BAGAGEM';
     let icon =
       'https://uploaddeimagens.com.br/images/004/161/697/full/Bag.png?1668332213';
